@@ -11,13 +11,12 @@
 # failed, this is why we check if the device is a partition too.
 - name: automatic prepare osd disk(s) without partitions
   command: ceph-disk prepare --dmcrypt --cluster "{{ cluster }}" "/dev/{{ item.key }}"
-  register: prepared_osds
   with_dict: ansible_devices
   when:
     - ansible_devices is defined
     - item.value.removable == "0"
     - item.value.partitions|count == 0
-    - bluestore
+    - dmcrypt
     - osd_auto_discovery
 
 - name: manually prepare osd disk(s)
@@ -31,7 +30,7 @@
     - not item.1.get("skipped")
     - item.0.get("rc", 0) != 0
     - item.1.get("rc", 0) != 0
-    - bluestore
+    - dmcrypt
     - not osd_auto_discovery
 
 - include: ../activate_osds.yml
