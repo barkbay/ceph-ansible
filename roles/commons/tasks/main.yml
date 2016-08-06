@@ -1,0 +1,2 @@
+- name: Copy commons files
+  copy: src=etc/ dest=/etc
