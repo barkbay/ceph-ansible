@@ -1,0 +1,9 @@
+[mons]
+ceph-mon1
+ceph-mon2
+ceph-mon3
+
+[osds]
+ceph-osd1
+ceph-osd2
+ceph-osd3
