@@ -1,0 +1,71 @@
+[rhel-7-server-extras-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-extras-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/7Server/$basearch/extras/os
+name = Red Hat Enterprise Linux 7 Server - Extras (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-ose-3.2-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-ose-3.2-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/7Server/$basearch/ose/3.2/os
+name = Red Hat OpenShift Enterprise 3.2 (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/os
+name = Red Hat Enterprise Linux 7 Server (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-rhceph-1.3-tools-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-rhceph-1.3-tools-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/ceph-tools/1.3/os
+name = Red Hat Ceph Storage Tools 1.3 for Red Hat Enterprise Linux 7 Server (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-rhceph-1.3-mon-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-rhceph-1.3-mon-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/ceph-mon/1.3/os
+name = Red Hat Ceph Storage MON 1.3 for Red Hat Enterprise Linux 7 Server (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-rhceph-1.3-calamari-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-rhceph-1.3-calamari-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/ceph-calamari/1.3/os
+name = Red Hat Ceph Storage Calamari 1.3 for Red Hat Enterprise Linux 7 Server (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-rhceph-1.3-installer-rpms]
+metadata_expire = 86400
+baseurl=http://yum.localdomain/rhel-7-server-rhceph-1.3-installer-rpms
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/ceph-installer/1.3/os
+name = Red Hat Ceph Storage Installer 1.3 for Red Hat Enterprise Linux 7 Server (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
+
+[rhel-7-server-rhceph-1.3-osd-rpms]
+baseurl=http://yum.localdomain/rhel-7-server-rhceph-1.3-osd-rpms
+metadata_expire = 86400
+#baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/ceph-osd/1.3/os
+name = Red Hat Ceph Storage OSD 1.3 for Red Hat Enterprise Linux 7 Server (RPMs)
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+gpgcheck = 1
